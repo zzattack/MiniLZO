@@ -6,5 +6,10 @@ It is really a copy-paste of the original code after putting it through the MSVC
 changing only the used datatypes to their .NET equivalents and fixing up some control flow to
 amend for the semantic differences between C's and C#'s goto statement.
 
-To add insult to injury, the sources I used were of the 1.07 version while for a while the 2.06 
-version has been out. If at all possible, avoid using this port.
+If at all possible, avoid using this port, it does not come with any of the guarantees of the C version.
+That means it
+* has not been thoroughly tested to be reliable 
+* does not guarantee pretty fast compression and *extremely* fast decompression
+* does not come with military-grade stability and robustness
+
+But.. it might just work for you.
